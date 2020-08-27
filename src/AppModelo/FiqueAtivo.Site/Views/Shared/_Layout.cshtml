@@ -2,13 +2,13 @@
 <head>
     <title>@ViewData["Title"] - Minha App Modelo</title>
 
-    <environment include="Developtment">
+    <environment include="Development">
         <link rel="stylesheet" href="~/lib/font-awesome/css/fontawesome.css" />
-        <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.bundle.min.css" />
     </environment>
-    <environment exclude="Developtment">
+    <environment exclude="Development">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-              asp-fallback-href="~/lib/bootstrap/css/bootstrap.css"
+              asp-fallback-href="~/css/site.bundle.min.css"
               asp-fallback-test="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
               integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
               crossorigin="anonymous">
@@ -50,13 +50,12 @@
         </footer>
 </body>
 <foot>
-    <environment include="Developtment">
-        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
-        <script src="~/lib/jquery/jquery.js"></script>
+    <environment include="Development">
+        <script src="~/js/site.bundle.min.js"></script>
     </environment>
-    <environment exclude="Developtment">
+    <environment exclude="Development">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                 asp-fallback-src="~/lib/jquery/jquery.js"
+                 asp-fallback-src="~/js/site.bundle.min.js"
                  asp-fallback-test="window.jQuery"
                  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"    
                  crossorigin="anonymous">
@@ -67,7 +66,7 @@
         </script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.Modal"
-                asp-fallback-src="~/lib/bootstrap/js/bootstrap.js">
+                asp-fallback-src="~/js/site.bundle.min.js"
                 integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
                 crossorigin="anonymous">
         </script>

@@ -10,7 +10,8 @@
     "outputFileName": "wwwroot/js/site.bundle.js",
     "inputFiles": [
       "wwwroot/js/site.js",
-      "wwwroot/lib/bootstrap/js/bootstrap.js"
+      "wwwroot/lib/bootstrap/js/bootstrap.js",
+      "wwwroot/lib/jquery/jquery.js"
     ]
   }
 ]
